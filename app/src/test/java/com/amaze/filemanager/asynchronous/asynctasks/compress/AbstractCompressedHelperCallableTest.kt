@@ -23,10 +23,7 @@ package com.amaze.filemanager.asynchronous.asynctasks.compress
 import android.os.Build.VERSION_CODES.*
 import android.os.Environment
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.amaze.filemanager.adapters.data.CompressedObjectParcelable
-import com.amaze.filemanager.asynchronous.asynctasks.AsyncTaskResult
 import com.amaze.filemanager.shadows.ShadowMultiDex
-import com.amaze.filemanager.utils.OnAsyncTaskFinished
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test

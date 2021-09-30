@@ -24,12 +24,14 @@ import android.os.Environment
 import java.io.File
 
 class SevenZipHelperTaskTest : AbstractCompressedHelperCallableTest() {
-    override fun createTask(relativePath: String): CompressedHelperCallable = SevenZipHelperCallable(
-        File(
-            Environment.getExternalStorageDirectory(),
-            "test-archive.7z"
-        ).absolutePath,
-        relativePath,
-        false
-    )
+    override fun createTask(relativePath: String): CompressedHelperCallable {
+        return SevenZipHelperCallable(
+            File(
+                Environment.getExternalStorageDirectory(),
+                "test-archive.7z"
+            ).absolutePath,
+            relativePath,
+            false
+        )
+    }
 }
